@@ -70,7 +70,7 @@ public class Controller {
 			OutputView.printException(info.get(0));
 		}
 	}
-	public void run() {
+	public void run() { //main실행
 		CommandController commandController = readCommand();
 		while (commandController.isNotQuit()) {
 			try {
@@ -84,8 +84,8 @@ public class Controller {
 		}
 	}
 
-	public CommandController readCommand() {
-		CommandDto commandDto = Retry.execute(inputView::readCmd);
+	public CommandController readCommand() { //커맨드 읽어서 반환
+//		CommandDto commandDto = Retry.execute(inputView::readCmd);
 		return CommandController.from(commandDto.getCommand());
 	}
 	

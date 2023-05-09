@@ -13,7 +13,7 @@ public class InputView {
 
 	public static void main(String[] args) {
 		Controller controller = new Controller();
-		controller.run();
+		controller.run(); //runnable interface
 	}
 
 	private static final String WELCOME_MSG = "\n 번호를 선택해주세요 \n" + "1. 회원주문\n" + "2. 비회원주문\n" + "3. 회원가입\n" + "Q. 종료\n";
